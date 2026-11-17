@@ -8,7 +8,7 @@
 
 ## 下载
 
-- 普通用户：[下载最新发布包](https://github.com/lcq666666/codex-provider-continuity/releases/latest)，解压完整 ZIP 后运行 `START.cmd`。
+- 普通用户：[下载发布包](https://github.com/lcq666666/codex-provider-continuity/releases)，解压完整 ZIP 后运行 `START.cmd`。首版 v0.1.0 标记为预发布。
 - 开发者：`git clone https://github.com/lcq666666/codex-provider-continuity.git`。
 - Python 推荐 3.14；不需要管理员权限，无内置运行时，不是免安装 EXE。
 
