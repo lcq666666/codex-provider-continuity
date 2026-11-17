@@ -94,7 +94,7 @@ class DistributionTests(unittest.TestCase):
             self.run_quiet(apply=True)
         with closing(sqlite3.connect(self.db)) as con:
             self.assertEqual(con.execute('SELECT model_provider,rollout_path,archived FROM threads').fetchone(),
-                             ('shared', str(self.rollout), 1))
+                             ('shared', str(self.rollout.resolve()), 1))
         with closing(sqlite3.connect(self.ccdb)) as con:
             self.assertEqual(con.execute("SELECT settings_config FROM providers WHERE app_type='claude'").fetchone()[0], other)
             settings = json.loads(con.execute("SELECT settings_config FROM providers WHERE app_type='codex'").fetchone()[0])
